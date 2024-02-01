@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position</title>
+
+    <style>
+        body {
+            height: 200vh;
+        }
+
+        .container {
+            width: 550px;
+            border: 2px solid black;
+            margin: 50px auto;
+            position: relative;
+        }
+
+        .box {
+            width: 150px;
+            height: 150px;
+        }
+
+        .red {
+            background-color: red;
+        }
+
+        .blue {
+            background-color: blue;
+            /* position: absolute;
+            left: 30px; */
+            /* position: fixed; */
+            position: sticky;
+            top: 0;
+        }
+
+        .orange {
+            background-color: orangered;
+        }
+
+        .purple {
+            background-color: purple;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="box red"></div>
+        <div class="box blue"></div>
+        <div class="box orange"></div>
+        <div class="box purple"></div>
+    </div>
+</body>
+
+</html>
